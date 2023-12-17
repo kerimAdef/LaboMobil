@@ -1,5 +1,5 @@
 .custom-header {
-    width: full-size;
+    width:auto;
     height: 100px;
     flex-shrink: 0;
     opacity: 0.7;
@@ -10,3 +10,27 @@
     background-color: #03045e;
     color: white;
   }
+
+.custom-welcome{
+    background-image: url('../image/inscription.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: var(--lab, #51FAE6);
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 24px;
+}

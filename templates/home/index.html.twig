@@ -3,17 +3,23 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<header class="text-light p-3 custom-header">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Logo à gauche -->
-      {# <img src="../image/logo.png" alt="Logo"> #}
+<header class="p-3 custom-header">
+    <div class="container-fluid d-flex justify-content-end align-items-center">
+    
+        {# <img src="../image/logo.png" alt="Logo"> #}
 
-      <!-- Boutons "Inscription" et "Connexion" à droite -->
-    <div class="align-right">
-      <a href="#" class="btn btn-custom mr-44">Inscription</a>
-      <a href="#" class="btn btn-custom">Connexion</a>
-  </div>
- </div
+        <!-- Boutons "Inscription" et "Connexion" à droite -->
+        <div class="mr-2">
+            <a href="#" class="btn btn-custom mr-4">Inscription</a>
+            <a href="#" class="btn btn-custom ">Connexion</a>
+        </div>
+    </div>
 </header>
+
+<div class="custom-welcome">
+    <h1>
+      BIENVENUE CHEZ ADEF MOBILAB.
+   </h1>
+  </div>
 
 {% endblock %}
