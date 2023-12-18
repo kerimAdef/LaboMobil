@@ -40,7 +40,7 @@
 }
 
 .custom-welcome{
-    background-image: url('../image/inscription.jpg'); 
+    background-image: url('../image/prise.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,11 +54,11 @@
 }
 
 
-h1 {
+.welcome-text {
     text-align: center;
     color: var(--lab, #51FAE6);
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 50px;
     font-style: normal;
     line-height: 24px;
 }
