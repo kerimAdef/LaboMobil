@@ -38,27 +38,74 @@
   max-width: 800px; 
   margin: auto; 
 }
-
-.custom-welcome{
-    background-image: url('../image/prise.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.description-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
+.icon {
+  margin-top: 20px;
+  width: 52px;
+  height: 88.743px;
+  flex-shrink: 0;
+  margin-right: 10px; /* Ajout de la marge à droite pour séparer de l'icône du texte */
+}
 
-.welcome-text {
-    text-align: center;
-    color: var(--lab, #51FAE6);
-    font-family: Roboto;
-    font-size: 50px;
-    font-style: normal;
-    line-height: 24px;
+.description {
+  width: 225px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--lab, #51FAE6);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 10px; /* Ajout de la marge à gauche pour séparer de l'icône */
+}
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-section, .explore-section {
+  height: 431px; /* Prend la hauteur complète de la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Couleur du texte */
+  font-size: 24px; /* Taille du texte */
+  font-family : Roboto; 
+  background-size: cover;
+  font-weight: 100;
+  line-height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.welcome-section::before,
+        .explore-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente pour assombrir */
+            z-index: 1; /* Placez la superposition au-dessus de l'image de fond */
+        }
+.welcome-section {
+  background-image: url('../image/prise.jpg'); 
+}
+
+.explore-section {
+  background-image: url('../image/microscope.jpg');
+  height: 860px;
+
+  
+
+
 }
