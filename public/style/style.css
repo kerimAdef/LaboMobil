@@ -40,28 +40,32 @@
 }
 .description-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  
 }
 
-.icon {
-  margin-top: 20px;
-  width: 52px;
-  height: 88.743px;
-  flex-shrink: 0;
-  margin-right: 10px; /* Ajout de la marge à droite pour séparer de l'icône du texte */
+@media (max-width: 767px) {
+  .text-container {
+      width: 100%;
+  }
 }
 
-.description {
-  width: 225px;
-  height: 20px;
-  flex-shrink: 0;
-  color: var(--lab, #51FAE6);
+
+.text-container {
+  color:  #51FAE6;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
-  margin-left: 10px; /* Ajout de la marge à gauche pour séparer de l'icône */
+  margin-bottom: 20px;
 }
+
+.text-container h2 {
+  font-size: 18px; /* Taille de police légèrement augmentée pour le titre */
+  margin-bottom: 8px; /* Espacement sous le titre */
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -86,16 +90,16 @@ body {
 }
 
 .welcome-section::before,
-        .explore-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            mix-blend-mode: overlay;
-            background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente pour assombrir */
-            z-index: 1; /* Placez la superposition au-dessus de l'image de fond */
+  .explore-section::before {
+    content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente pour assombrir */
+      z-index: 1; /* Placez la superposition au-dessus de l'image de fond */
         }
 .welcome-section {
   background-image: url('../image/prise.jpg'); 
